@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.test{
+    background-color: rgb(177, 18, 18);
+}
+.cardsContainer{
+    display: flex;
+    border: 1px solid rgb(8, 0, 255);
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    opacity: 0.99;
+    background-image: url('./assets/images/Cartoonpho.jpeg');
+    
+}
+.cardsContainer::before{
+    content: "";
+    position: absolute;
+
+    background: url('./assets/images/Cartoonpho.jpeg');
+
+    opacity:0.4;
+    z-index: -1;
+
+}
+.card1{
+    background-color: rgb(209, 224, 224);
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-items: left;
+     border: 1px solid red;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+    width: 300px;
+    height: 200px;
+    border-style: solid;
+    border-color:rgb(253, 218, 172);
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 30px;
+    font-family: cursive;
+    margin: 50px;
+    margin-top: 10px;
+    color: red;
+}
+p{
+    display: block;
+    font-size: 15px;
+    font-family: cursive;
+     margin: 20px;
+     margin-bottom: 20%;
+    color: navy;
 }
